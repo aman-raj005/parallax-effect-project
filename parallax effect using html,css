@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Raj (parallex-effect)</title>
+    <!-- <link rel="stylesheet" href="parallex effect.css"> -->
+<style>
+*{padding: 0px;
+margin:0px;
+box-sizing: border-box;}
+#container{
+    width:100%;
+        height:100vh;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    perspective:10px;
+    
+    overflow:auto ;
+}
+#background
+{position:absolute;
+    width:100%;
+    height:100%;
+    transform:translateZ(-45px)scale(6); }
+
+    #forebackground
+{position:sticky;
+   
+    margin-left:195px;
+    width:30%;
+    height:60vh;
+    transform:translateZ(-10px)scale(6px);
+   
+}
+.box{ justify-content: center;
+  display: flex;
+  position:relative;
+  transform-style:preserve-3d ;
+  z-index:-1;
+}
+#forebackground,#background
+{
+    z-index:-1;
+    /* object-fit: cover; */
+}
+</style>
+</head>
+<body>
+    <div id="container";>
+    <img src="maa background photo.jpg"class="box"id="background" alt="image not found"> 
+    <img src="foreground_photo_maa-removebg-preview.png"class="box"id="forebackground" alt="image not found">
+<h1><B>VINA SINGH </B> </h1>
+</div>
+</body>
+</html>
